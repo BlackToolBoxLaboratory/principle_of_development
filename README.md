@@ -25,6 +25,27 @@ The class naming convention is based on [Block-Element-Modifier](http://getbem.c
     </div>
   </div>
   ```
+Then, when we use them to style(CSS):
+
+  ```css
+  .component-panel{
+    ... basic style
+  }
+  .component-panel.panel-collapsable {
+    ... advanced style for collapsable
+  }
+  ```
+
+Or using SASS/SCSS or LESS, we can do like this:
+
+  ```scss
+  .component-panel{
+    ... basic style
+    &.panel-collapsable {
+      ... advanced style for collapsable
+    }
+  }
+  ```
 
 ## JavaScript's Naming Rules
 
